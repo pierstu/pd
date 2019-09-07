@@ -1,0 +1,38 @@
+#N canvas 0 89 1920 991 10;
+#X obj 42 -29 ctlin 45 1;
+#X obj 139 117 bng 15 250 50 0 empty empty play 17 7 0 10 -262130 -4160
+-1;
+#X obj 134 40 ctlin 46 1;
+#X obj 102 117 bng 15 250 50 0 empty empty rew 17 7 0 10 -262130 -4160
+-1;
+#X obj -4 -50 ctlin 47 1;
+#X obj 110 19 ctlin 49 1;
+#X obj 183 117 bng 15 250 50 0 empty empty fwd 17 7 0 10 -262130 -4160
+-1;
+#X obj 75 -5 ctlin 48 1;
+#X obj 188 59 ctlin 44 1;
+#X obj -23 288 outlet $rew;
+#X obj 102 146 bng 15 250 50 0 empty empty loop 17 7 0 10 -262130 -4160
+-1;
+#X obj 139 146 bng 15 250 50 0 empty empty stop 17 7 0 10 -262130 -4160
+-1;
+#X obj 183 146 bng 15 250 50 0 empty empty rec 17 7 0 10 -261234 -258113
+-1;
+#X obj 84 416 outlet $rec;
+#X obj 50 388 outlet $play;
+#X obj 25 363 outlet $cycle;
+#X obj -2 313 outlet $play;
+#X obj 7 338 outlet $fwd;
+#X connect 0 0 1 0;
+#X connect 1 0 16 0;
+#X connect 2 0 11 0;
+#X connect 3 0 9 0;
+#X connect 4 0 3 0;
+#X connect 5 0 10 0;
+#X connect 6 0 17 0;
+#X connect 7 0 6 0;
+#X connect 8 0 12 0;
+#X connect 10 0 15 0;
+#X connect 11 0 14 0;
+#X connect 12 0 13 0;
+#X coords 0 -1 1 1 120 80 1 100 100;
